@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.menu ul li{
+    @apply px-4 text-tertiary; 
+}
+ul li a:hover{
+    @apply hover:text-primary;
+}
+
+h1,
+h2,
+h3{
+    @apply text-tertiary;
+}
+h1{
+    @apply text-5xl font-cormorant font-bold text-center absolute; 
+}
+.swiper .swipe{
+    @apply text-tertiary hidden md:inline;
+}
+
+
+.card{
+    @apply md:flex justify-between;
+}
+.left,
+ .right{
+    @apply md:w-1/2;
+}
+button{
+    @apply bg-primary text-slate-50 text-sm tracking-wider px-4 py-2 cursor-pointer transition ease-in-out delay-150;
+}
+button:hover{
+    @apply opacity-75 -translate-y-1 scale-110 duration-300;
+}

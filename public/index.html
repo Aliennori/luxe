@@ -1,0 +1,292 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="styles.css">
+        <title>LuxeHotel</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    </head>
+    <body class="font-roboto text-secondary">        
+        <div class="flex justify-between items-center py-4 md:px-10 ml-10 mr-12 md:flex relative">
+            <div>
+                <a href="index.html">
+                    <img src="../images/logo-d.png" alt="" class="w-20 h-6">
+                </a>
+            </div>
+            <div class="hamburger md:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                  </svg>
+                  
+            </div>
+            <nav class="menu hidden md:flex">
+                <ul class="flex justify-between">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="rooms.html">ROOMS</a></li>
+                    <li><a href="amenities.html">AMENITIES</a></li>
+                    <li><a href="gallery.html">GALLERY</a></li>
+                    <li><a href="about.html">ABOUT US</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </nav>
+            <div class="hidden md:flex">
+                <ul class="flex justify-between items-center text-slate-50">
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-7 h-7 p-1 bg-black rounded-full mr-8">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+                        </svg>  
+                    </li>
+                    <li><a href=""><i class="fa-brands fa-facebook  bg-black  rounded-full p-2 mr-2"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-twitter  bg-black rounded-full p-2 mr-2"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-instagram rounded-full bg-black p-2 mr-20"></i></a></li>
+                </ul>
+            </div>
+        </div>
+         
+        <div class="mobile-flex absolute bg-black/80 md:hidden hidden w-full h-screen top-0 left-0 z-10">
+            <div class="w-[300px] h-screen z-10 bg-white py-6 px-4">
+            <div class="flex justify-end items-center mr-4">
+                <p class="text-xl mr-2">Close</p>
+              <div class="close">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                  </svg>
+                  
+              </div>
+              
+            </div>
+            <nav class="">
+                <ul class="mt-4">
+                    <li class="mb-6"><a href="index.html">HOME</a></li>
+                    <li class="mb-6"><a href="rooms.html">ROOMS</a></li>
+                    <li class="mb-6"><a href="amenities.html">AMENITIES</a></li>
+                    <li class="mb-6"><a href="gallery.html">GALLERY</a></li>
+                    <li class="mb-6"><a href="about.html">ABOUT US</a></li>
+                    <li class="mb-6"><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </nav>
+        </div>
+        </div>
+       
+        <div class="swiper h-screen text-slate-50">
+            <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="bg-slide-1 h-full bg-cover bg-no-repeat bg-center flex items-center justify-center">
+                <h1 class="animate-fade-in">Welcome to Luxe Hotel, where luxury meets comfort.</h1>              
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="bg-slide-2 h-full bg-cover bg-no-repeat bg-center flex items-center justify-center">
+                    <h1 class="animate-fade-in">Experience a stay like no other amidst opulence and warm hospitality.</h1>
+                </div>
+            </div>          
+            <div class="swiper-slide">
+                <div class=" bg-slide-4 h-full bg-cover bg-no-repeat bg-center flex items-center justify-center">  
+                    <h1 class=" animate-fade-in">Treat yourself to a haven of relaxation and rejuvenation.</h1>
+                </div>
+            </div>
+            </div>            
+            <div class="swiper-button-prev swipe"></div>
+            <div class="swiper-button-next swipe"></div>    
+        </div>
+        
+        <div class="md:px-16 mt-20">
+            <h2 class="text-4xl text-center mt-8 font-bold font-cormorant">Featured Rooms</h2>
+            <div class="card mt-10 md:flex-row-reverse">
+                
+                <div class="right py-4 text-center px-16">
+                    <h2 class="text-4xl text-center  mb-8 font-bold font-cormorant">Ocean View</h2>
+                    <p class=" mb-4">Welcome to our Ocean View rooms, where serenity meets the sea. Experience the magic of waking up to breathtaking vistas of the ocean waves gently caressing the shore. Each Ocean View room offers a private balcony, allowing you to immerse yourself in the beauty of the natural surroundings. Relax in coastal-inspired comfort as you listen to the soothing sounds of the sea, creating an unforgettable retreat for your senses. Indulge in the ultimate seaside escape and embrace the tranquility of our Ocean View rooms.</p>
+                    <button><a href="rooms.html">ROOM DETAILS</a></button>
+                </div>
+                <div class="left ml-6 md:ml-16">
+                    <img class="w-11/12 object-cover rounded-xl" src="../images/ocean.1.avif" alt="">
+                </div>
+            </div>
+            <div class="card mt-10 mb-10 ">
+                <div class="left py-4 text-center px-16 mt-6">
+                    <h2 class="text-4xl text-center mt-8 mb-8 font-bold font-cormorant">Deluxe Suite</h2>
+                    <p class="mb-8"> Indulge in the lap of luxury with our Deluxe Suite. This spacious and opulent room boasts stunning panoramic views of the city skyline or picturesque landscapes. Enjoy a restful night's sleep on a plush king-size bed, unwind in the elegant sitting area, and pamper yourself in the lavish en-suite bathroom with a relaxing Jacuzzi.</p>
+                    <button><a href="rooms.html">ROOM DETAILS</a></button>
+                </div>
+                <div class="right ml-6">
+                    <img class="w-11/12 h-full rounded-xl object-cover" src="../images/ocean.1.avif" alt="">
+                </div>
+            </div>
+            <div class="card my-20 md:flex-row-reverse">
+
+                <div class="right py-4 text-center px-16">
+                    <h2 class="text-4xl text-center mt-2 mb-8 font-bold font-cormorant">Queen and Double Room</h2>
+                    <p class="mb-4">Experience the epitome of comfort and elegance in our thoughtfully designed Queen and Double rooms. The Queen Room offers a luxurious queen-size bed, stylish sitting area, and enchanting city or garden views. Indulge in the spa-like en-suite bathroom, complete with sleek marble fittings and a refreshing rain shower.</p>
+                    <p class="mb-6">Whether you're seeking a romantic escape or a comfortable stay with loved ones, our Queen and Double rooms ensure an unforgettable experience. Book your stay today and immerse yourself in refined luxury and timeless charm.</p>
+                    <button><a href="rooms.html">ROOM DETAILS</a></button>
+                </div>
+                <div class="left">
+                    <img class="w-11/12 h-11/12 rounded-xl object-cover ml-6 md:ml-16" src="../images/ocean.1.avif" alt="">
+                    
+                </div>
+            </div>
+        </div>
+         
+        <div class="px-16 mb-10">
+            <h2 class="text-4xl text-center mt-8 mb-8 font-bold font-cormorant">Hotel Amenities</h2>
+            <div class="grid md:grid-cols-3 md:grid-rows-2 gap-6 md:h-[800px] w-11/12 mx-auto">
+                <div class="text-center py-6 px-8  border-2  hover:border-tertiary">
+                    <img src="../images/svg/parking.svg" alt="" class="h-12 m-auto">
+                    <h3 class="text-xl font-cormorant font-bold mb-4 mt-8">Free Self-parking</h3>
+                    <p class="mb-8"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt non pariatur laboriosam cumque quas debitis repellat architecto provident facere eaque.</p>
+                    <a href=""class=" text-sm font-bold tracking-wider text-tertiary">READ MORE</a>
+                </div>
+                <div class="text-center py-4 px-8 border-2  hover:border-tertiary">
+                    <img src="../images/svg/internet.svg" alt="" class="h-12 m-auto">
+                    <h3 class="text-xl font-cormorant font-bold mb-4 mt-8">High speed Internet access</h3>
+                    <p class="mb-8"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt non pariatur laboriosam cumque quas debitis repellat architecto provident facere eaque.</p>
+                    <a href=""class=" text-sm font-bold tracking-wider text-tertiary">READ MORE</a>
+                </div>
+                <div class="text-center py-4 px-8 border-2  hover:border-tertiary">
+                    <img src="../images/svg/wifi.svg" alt="" class="h-12 m-auto">
+                    <h3 class="text-xl font-cormorant font-bold mb-4 mt-8">Complimentary WiFi in public areas</h3>
+                    <p class="mb-8"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt non pariatur laboriosam cumque quas debitis repellat architecto provident facere eaque.</p>
+                    <a href=""class=" text-sm font-bold tracking-wider text-tertiary">READ MORE</a>
+                </div>
+                <div class="text-center py-4 px-8 border-2  hover:border-tertiary">
+                    <img src="../images/svg/elevator.svg" alt="" class="h-12 m-auto">
+                    <h3 class="text-xl font-cormorant font-bold mb-4 mt-8">Elevators</h3>
+                    <p class="mb-8"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt non pariatur laboriosam cumque quas debitis repellat architecto provident facere eaque.</p>
+                    <a href=""class=" text-sm font-bold tracking-wider text-tertiary">READ MORE</a>
+                </div>
+                <div class="text-center py-4 px-8 border-2  hover:border-tertiary">
+                    <img src="../images/svg/partners.svg" alt="" class="h-12 m-auto">
+                    <h3 class="text-xl font-cormorant font-bold mb-4 mt-8">Meeting rooms</h3>
+                    <p class="mb-8"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt non pariatur laboriosam cumque quas debitis repellat architecto provident facere eaque.</p>
+                    <a href=""class=" text-sm font-bold tracking-wider text-tertiary">READ MORE</a>
+                </div>
+                <div class="text-center py-4 px-8 border-2  hover:border-tertiary">
+                    <img src="../images/svg/washing-machine.svg" alt="" class="h-12 m-auto">
+                    <h3 class="text-xl font-cormorant font-bold mb-4 mt-8">Laundry and Valet Service</h3>
+                    <p class="mb-8"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt non pariatur laboriosam cumque quas debitis repellat architecto provident facere eaque.</p>
+                    <a href=""class=" text-sm tracking-wider font-bold text-tertiary">READ MORE</a>
+                </div>    
+            </div>
+        </div>
+        <div class="md:bg-slide-3 bg-cover bg-no-repeat bg-center md:p-28 ">
+        <div class="swiper bg-white md:w-3/4 py-12 border-8">
+        <div class="swiper-wrapper">
+         <div class="swiper-slide">
+         <div class="p-4">
+            <h2 class="text-3xl text-center mb-4">"Feels like a 7 star hotel"</h2>
+            <p class="text-center text-sm tracking-wide p-2">Most awesome paradise! This hotel is so beautiful after the recent renovations. Extremely clean, the politest of the team here to serve you, foods menu has an excellent choice and served very tasty. Serves vegetarian foods upon request to the chef who is willing to cook for you. Excellent facilities throughout this complex. 4 pools in total for children/adults. Awesome beach frontage. White heavenly sandy beach. Need I say more! Overall this feels like a 7stars resort. Recommend to anyone.</p>
+         </div>         
+         <div class="text-center">
+            <img src="../images/image-kira.jpg" alt="" class="rounded-full m-auto border-solid border-4 border-primary">
+            <p class="mt-4 text-xs tracking-wider text-primary">LEAH MARQUEES</p>
+         </div>
+         </div>
+         <div class="swiper-slide">
+         <div class="p-4">
+            <h2 class="text-3xl text-center mb-4">"Magnificent"</h2>
+            <p class="text-center text-sm tracking-wide p-2">Everything was great, super! From the reception, to the room, the food, the view, the activities, the cocktails at the bar. All the staff top it up with their awesomeness! And oh, all the rooms have the ocean view, this is breathtaking. A wonderful place I would recommend for everyone. I would definitely visit again. Thank you for making my stay memorable!</p>
+         </div>         
+         <div class="text-center">
+            <img src="../images/image-daniel.jpg" alt="" class="rounded-full m-auto border-solid border-4 border-primary">
+            <p class="mt-4 text-xs text-primary tracking-wider ">DANIEL OLOO</p>
+         </div>
+         </div>
+         <div class="swiper-slide">
+         <div class="p-4">
+            <h2 class="text-3xl text-center mb-4">"Fantastic getaway"</h2>
+            <p class="text-center text-sm tracking-wide p-2">Spent three days during Easter break and it was fantastic, the facility is in top notch state after a recent renovation. All the rooms are sea view, the staff are friendly and are on hand to help if you need help to plan activities to do around Watamu. Their cocktail bar just by is just what you need to complete a getaway</p>
+         </div>         
+         <div class="text-center">
+            <img src="../images/image-jeanette.jpg" alt="" class="rounded-full m-auto border-solid border-4 border-primary">
+            <p class="mt-4 text-xs tracking-wider text-primary">MOANA GARCIA</p>
+         </div>
+         </div>
+        </div>
+        </div>
+        </div>
+
+        <div class="news card px-6 w-11/12 mt-24 mb-24 md:ml-14 md:mr-14">
+            <div class="md:mr-12 md:w-1/3">
+                <h2 class="text-4xl mt-8 mb-8 font-bold font-cormorant">News & Events</h2>
+                <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad animi molestiae rem quae! Distinctio, voluptatibus!</p>
+                <a href=""class=" text-sm font-bold tracking-wider text-primary">ALL POSTS</a>
+            </div>
+            <div class="mt-4 md: mr-8">
+                <img src="../images/img_1.jpg" alt="" class="py-4 ">
+                <h3 class="text-xl font-cormorant font-bold mb-2 mt-8">A glimpse into world's hidden treasures</h3>
+                <p class="text-sm mb-4">December 20, 2019. by <span class="text-primary">Joefrey Mahusay</span></p>
+                <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, vero.</p>
+                <a href=""class=" text-xs font-bold tracking-wider text-primary">READ MORE</a>                  
+            </div>
+            <div class="mt-4">
+                <img src="../images/img_3.jpg" alt="" class="py-4">
+                <h3 class="text-xl font-cormorant font-bold mb-2 mt-8">7 resorts to visit this summer</h3>
+                <p class="text-sm mb-4">December 20, 2023. by <span class="text-primary">Gael Kirumba</span></p>
+                <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, vero.</p>
+                <a href=""class=" text-xs font-bold tracking-wider text-primary">READ MORE</a>                  
+            </div>
+        </div>
+        
+        <div class="mt-4 text-center">
+            <p class="text-3xl text-tertiary bg-action py-16 px-8">If you have any special requests, please feel free to call us. <span class="text-amber-900">+254701234567</span></p>
+        </div>
+        <footer class="pl-4">
+            <div class="card">
+                <div class="mt-16 p-2 left card md:ml-10">
+                    <div class="md:w-2/3 md:px-4">
+                        <h3 class="text-2xl tracking-wide font-cormorant md:mb-4">About Us</h3>
+                        <p class="mt-2 mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat pariatur delectus rerum reprehenderit fugiat veritatis voluptatem odio praesentium recusandae consequuntur.</p>
+                        <a href=""class=" text-xs font-bold tracking-wider text-tertiary">READ MORE</a>             
+                    </div>
+                    <div class="md:w-1/3 md:ml-10">
+                        <h3 class="text-2xl font-cormorant mb-2 mt-4 md:mt-0 md:mb-4">Navigation</h3>
+                        <ul>
+                            <li class="mb-3"><a href="">Home</a></li>
+                            <li class="mb-3"><a href="">Rooms</a></li>
+                            <li class="mb-3"><a href="">Amenities</a></li>
+                            <li class="mb-3"><a href="">Gallery</a></li>
+                            <li class="mb-3"><a href="">About Us</a></li>
+                            <li class="mb-3"><a href="">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="right md:mt-14">
+                    <div class="card md:w-2/4">
+                        <div class="">
+                            <h3 class="text-2xl font-cormorant mb-2 mt-4 md:mb-4">Address</h3>
+                            <address> 300 Wood Avenue Rd <br> Westlands,Nairobi 00100</address>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-cormorant mb-2 mt-4 md:mb-4">Telephone</h3>
+                            <a href="">+254701234567</a> <br>
+                            <a href="">+254709876543</a>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-cormorant mt-4 md:mt-10">Join our newsletter</h3>
+                        <p>Be the first to know our latest updates and news!</p>
+                        <form action="#">
+                            <div class=" mt-2">
+                              <input type="email" class="mr-2 py-3 px-4 border-2 w-2/4" placeholder="Enter your email">
+                              <input type="submit" value="Subscribe" class="px-4 bg-tertiary py-3 tracking-wider font-bold text-white">
+                            </div>
+                          </form>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-12 card md:pl-12">
+                <p>Copyright<span class="text-amber-900"> ©2023 </span>.All Rights Reserved. Design by <span class="text-amber-900">Nori</span></p>
+                <ul class="flex mt-4 md:mr-36 text-white mb-8">
+                    <li><a href=""><i class="fa-brands fa-facebook  bg-black rounded-full p-2 mr-2"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-twitter  bg-black rounded-full p-2 mr-2 ml-4"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-instagram  rounded-full bg-black p-2 mr-12 ml-4"></i></a></li>                    
+                </ul>
+            </div>
+        </footer>          
+        <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script> 
+        <script src="index.js"></script> 
+    </body>
+    </html>
