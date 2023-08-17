@@ -75,56 +75,53 @@
     </div>
     </div>  
        
-        <div class="w-screen mt-24 px-4 md:px-16">         
+        <div class="w-screen mt-24 ">         
          <div class="swiper">
-         <div class="swiper-wrapper">
+         <div class="swiper-wrapper md:px-16">
             <div class="swiper-slide"><img src="../images/gallery-1.jpg" alt=""></div>
             <div class="swiper-slide"><img src="../images/slider4.jpg" alt=""></div>
             <div class="swiper-slide"><img src="../images/slider-3.jpg" alt=""></div>           
          </div>
          </div>
-         <div class=" relative px-4 md:px-16">
-          <h2 class="text-center text-3xl font-bold font-cormorant mb-24 mt-24">More Galleries</h2>
-          <div class=" grid md:grid-cols-3 md:grid-rows-3 gap-6">
-            <a href="#" class="aspect-w-4 aspect-h-3">
-                <img class="object-cover w-full h-full" src="../images/img_1.jpg" alt="" onclick="openPopup('../images/img_1.jpg')">
-            </a>
-            <a href="#" class="aspect-w-4 aspect-h-3">
-                <img class="object-cover w-full h-full" src="../images/img_1.jpg" alt="" onclick="openPopup('../images/img_1.jpg')">
-            </a>
-            <a href="#" class="aspect-w-4 aspect-h-3">
-                <img class="object-cover w-full h-full" src="../images/img_1.jpg" alt="" onclick="openPopup('../images/img_1.jpg')">
-            </a>
-            <a href="#" class="aspect-w-4 aspect-h-3">
-                <img class="object-cover w-full h-full" src="../images/weddings.jpg" alt="" onclick="openPopup('../images/weddings.jpg')">
-            </a>
-            <a href="#" class="aspect-w-4 aspect-h-3">
-                <img class="object-cover w-full h-full" src="../images/img_1.jpg" alt="" onclick="openPopup('../images/img_1.jpg')">
-            </a>
-            <a href="#" class="aspect-w-4 aspect-h-3">
-                <img class="object-cover w-full h-full" src="../images/events.jpg" alt="" onclick="openPopup('../images/events.jpg')">
-            </a>
-            <a href="#" class="aspect-w-4 aspect-h-3">
-                <img class="object-cover w-full h-full" src="../images/img_3.jpg" alt="" onclick="openPopup('../images/img_3.jpg')">
-            </a>
-            <a href="#" class="aspect-w-4 aspect-h-3">
-                <img class="object-cover w-full h-full" src="../images/img_2.jpg" alt="" onclick="openPopup('../images/img_2.jpg')">
-            </a>
-            <a href="#" class="aspect-w-4 aspect-h-3">
-                <img class="object-cover w-full h-full cursor-pointer" src="../images/img_3.jpg" alt="" onclick="openPopup('../images/img_3.jpg')">
-            </a>
-        </div>        
+         <div class="relative  min-h-screen">
+            <h2 class="text-center text-3xl font-bold font-cormorant mb-24 mt-24">More Galleries</h2>
           
-        </div>
-    </div>
-        <div class="popup fixed top-0 left-0 bg-black/80 w-screen h-screen z-50 hidden">
-            <div class="closePopup mb-24 mt-24s text-right">
-             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-12 h-12">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-              </svg>
+          <div class=" px-4 md:px-16 image-container grid md:grid-cols-3 md:grid-rows-3 gap-6 md:w-11/12">
+            <div class="aspect-w-4 aspect-h-3 cursor-pointer">
+                <img class="object-cover w-full h-full " src="../images/img_1.jpg" alt=""onclick="openPopupImage(this.src)">
             </div>
-            <img class="max-h-full max-w-full" id="popupImage" alt="">
+            <div class="aspect-w-4 aspect-h-3 cursor-pointer">
+                <img class="object-cover w-full h-full" src="../images/img_1.jpg" alt=""onclick="openPopupImage(this.src)">
+            </div>
+            <div class="aspect-w-4 aspect-h-3 cursor-pointer">
+                <img class="object-cover w-full h-full" src="../images/img_1.jpg" alt=""onclick="openPopupImage(this.src)">
+            </div>
+            <div class="aspect-w-4 aspect-h-3 cursor-pointer">
+                <img class="object-cover w-full h-full" src="../images/img_4.jpg" alt=""onclick="openPopupImage(this.src)">
+            </div>
+            <div class="aspect-w-4 aspect-h-3 cursor-pointer">
+                <img class="object-cover w-full h-full" src="../images/img_1.jpg" alt=""onclick="openPopupImage(this.src)">
+            </div>
+            <div class="aspect-w-4 aspect-h-3 cursor-pointer">
+                <img class="object-cover w-full h-full" src="../images/img_2.jpg" alt=""onclick="openPopupImage(this.src)">
+            </div>
+            <div class="aspect-w-4 aspect-h-3 cursor-pointer">
+                <img class="object-cover w-full h-full " src="../images/img_3.jpg" alt=""onclick="openPopupImage(this.src)">
+            </div>
+            <div class="aspect-w-4 aspect-h-3 cursor-pointer">
+                <img class="object-cover w-full h-full" src="../images/img_2.jpg" alt=""onclick="openPopupImage(this.src)">
+            </div>
+            <div class="aspect-w-4 aspect-h-3 cursor-pointer">
+                <img class="object-cover w-full h-full" src="../images/img_3.jpg" alt=""onclick="openPopupImage(this.src)">
+            </div>
         </div>
+        <div class="popup absolute top-0 left-0  bg-black/80 w-full h-screen hidden flex justify-center items-center">
+             <img class="" src="../images/img_3.jpg" id="popupImage" alt="">    
+             <span class="text-4xl font-semibold text-white absolute top-0  left-0 ml-10 mt-24 cursor-pointer" onclick="closePopupImage()">X</span>
+      </div>
+              
+    </div>
+       
                     
         
         <footer class="pl-4 mt-20">

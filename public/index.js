@@ -37,19 +37,17 @@ const swiper = new Swiper('.swiper', {
   })
 
 
-  function openPopup(imageSrc) {
-    const popup= document.querySelector(".popup");
-    const popupImage = document.getElementById("popupImage");
+ const popup = document.querySelector('.popup');
+ const popupImage = document.getElementById("popupImage");
 
-    popupImage.src=imageSrc;
-    popup.classList.remove("hidden");
+ function openPopupImage(pic) {
+  popup.classList.add('flex');
+  popup.classList.remove('hidden');
+  popupImage.src = pic;
+ }
 
-  }
-  function closePopup() {
-    const popup= document.querySelector(".popup");
-    const popupImage = document.getElementById("popupImage");
-
-    popupImage.src="";
-    popup.classList.add("hidden");
-
-  }
+ function closePopupImage() {
+  popup.classList.remove('flex');
+  popup.classList.add('hidden');
+  
+ }
