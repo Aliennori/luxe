@@ -26,7 +26,7 @@ module.exports = {
         'primary':'#c9ab81',
         'secondary':'#707070',
         'tertiary': '#000',
-        'action': '#ccc',
+        'action': '#e6e6e6',
         
 
         

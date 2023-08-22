@@ -9,66 +9,71 @@
 </head>
 <body class="font-roboto text-secondary">
     
-    <div class="flex justify-between items-center py-4 md:px-10 ml-10 mr-12 md:flex relative">
-        <div>
-            <a href="index.html">
-                <img src="../images/logo-d.png" alt="" class="w-20 h-6">
-            </a>
+    <div class="bg-slide-1 h-screen w-full">
+        <div class="flex justify-between items-center py-4 md:px-10 ml-10 mr-12 md:flex relative">
+            <div>
+                <a href="index.html">
+                    <img src="../images/logo-d.png" alt="" class="w-20 h-6">
+                </a>
+            </div>
+            <div class="hamburger md:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                  </svg>
+                  
+            </div>
+            <nav class="menu hidden md:flex">
+                <ul class="flex justify-between">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="rooms.html">ROOMS</a></li>
+                    <li><a href="amenities.html">AMENITIES</a></li>
+                    <li><a href="gallery.html">GALLERY</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </nav>
+            <div class="hidden md:flex">
+                <ul class="flex justify-between items-center text-slate-50">
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-7 h-7 p-1 bg-black rounded-full mr-8">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+                        </svg>  
+                    </li>
+                    <li><a href=""><i class="fa-brands fa-facebook  bg-black  rounded-full p-2 mr-2"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-twitter  bg-black rounded-full p-2 mr-2"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-instagram rounded-full bg-black p-2 mr-20"></i></a></li>
+                </ul>
+            </div>
         </div>
-        <div class="hamburger md:hidden">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-              </svg>
+         
+        <div class="mobile-flex absolute bg-black/80 md:hidden hidden w-full h-screen top-0 left-0 z-10">
+            <div class="w-[300px] h-screen z-10 bg-white py-6 px-4">
+            <div class="flex justify-end items-center mr-4">
+                <p class="text-xl mr-2">Close</p>
+              <div class="close">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                  </svg>
+                  
+              </div>
               
+            </div>
+            <nav class="">
+                <ul class="mt-4">
+                    <li class="mb-6"><a href="index.html">HOME</a></li>
+                    <li class="mb-6"><a href="rooms.html">ROOMS</a></li>
+                    <li class="mb-6"><a href="amenities.html">AMENITIES</a></li>
+                    <li class="mb-6"><a href="gallery.html">GALLERY</a></li>
+                    <li class="mb-6"><a href="about.html">ABOUT</a></li>
+                    <li class="mb-6"><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </nav>
         </div>
-        <nav class="menu hidden md:flex">
-            <ul class="flex justify-between">
-                <li><a href="index.html">HOME</a></li>
-                <li><a href="rooms.html">ROOMS</a></li>
-                <li><a href="amenities.html">AMENITIES</a></li>
-                <li><a href="gallery.html">GALLERY</a></li>
-                <li><a href="about.html">ABOUT US</a></li>
-                <li><a href="contact.html">CONTACT</a></li>
-            </ul>
-        </nav>
-        <div class="hidden md:flex">
-            <ul class="flex justify-between items-center text-slate-50">
-                <li>
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-7 h-7 p-1 bg-black rounded-full mr-8">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
-                    </svg>  
-                </li>
-                <li><a href=""><i class="fa-brands fa-facebook  bg-black  rounded-full p-2 mr-2"></i></a></li>
-                <li><a href=""><i class="fa-brands fa-twitter  bg-black rounded-full p-2 mr-2"></i></a></li>
-                <li><a href=""><i class="fa-brands fa-instagram rounded-full bg-black p-2 mr-20"></i></a></li>
-            </ul>
         </div>
-    </div>
-     
-    <div class="mobile-flex absolute bg-black/80 md:hidden hidden w-full h-screen top-0 left-0 z-10">
-        <div class="w-[300px] h-screen z-10 bg-white py-6 px-4">
-        <div class="flex justify-end items-center mr-4">
-            <p class="text-xl mr-2">Close</p>
-          <div class="close">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-              </svg>
-              
-          </div>
-          
+        <div class="flex justify-center mt-24">
+        <h1 class="text-center text-white font-bold font-cormorant mt-24 animate-fade-in">Our Rooms</h1>
         </div>
-        <nav class="">
-            <ul class="mt-4">
-                <li class="mb-6"><a href="index.html">HOME</a></li>
-                <li class="mb-6"><a href="rooms.html">ROOMS</a></li>
-                <li class="mb-6"><a href="amenities.html">AMENITIES</a></li>
-                <li class="mb-6"><a href="gallery.html">GALLERY</a></li>
-                <li class="mb-6"><a href="about.html">ABOUT US</a></li>
-                <li class="mb-6"><a href="contact.html">CONTACT</a></li>
-            </ul>
-        </nav>
-    </div>
-    </div>
+        </div>
     <div class="text-center md:px-16 mb-10 bg-room-5 bg-cover bg-center bg-no-repeat h-full">
         <h2 class="text-tertiary text-4xl text-center font-cormorant font-bold mb-8">Enjoy your Stay</h2>
         <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit odit dicta quaerat tenetur. Pariatur, ullam sed! Sint hic molestias illum. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium quidem illum ipsam aut incidunt soluta atque sunt accusamus porro ipsum.</p>
@@ -115,7 +120,7 @@
                         <li class="mb-3"><a href="">Rooms</a></li>
                         <li class="mb-3"><a href="">Amenities</a></li>
                         <li class="mb-3"><a href="">Gallery</a></li>
-                        <li class="mb-3"><a href="">About Us</a></li>
+                        <li class="mb-3"><a href="">About</a></li>
                         <li class="mb-3"><a href="">Contact</a></li>
                     </ul>
                 </div>
